@@ -3,11 +3,11 @@
 
 import cocotb
 from cocotb.clock import Clock
-from cocotb.triggers import ClockCycles
+from cocotb.triggers import ClockCycles, RisingEdge
 
 
 @cocotb.test()
-async def test_project(dut):
+async def tt_um_HSMinches(dut):
     dut._log.info("Start")
 
     # Set the clock period to 10 us (100 KHz)
